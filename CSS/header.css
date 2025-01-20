@@ -1,0 +1,59 @@
+#icono-pag{
+width: 50vh;
+height: 15vh;
+}
+.header-gen{
+    display: flex;
+    flex-direction: column;
+}
+.header-right{
+    display: flex;
+    margin: 0;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 1vh;
+}
+.header-left{
+    display: flex;
+    justify-content: center;
+}
+#icon-heder{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3px;
+}
+#searchbar{
+    height: 30px;
+}
+#registro{
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: black;
+}
+#inicio-sesion{
+    height: 30px;
+    width: 100px;
+    margin: 0;
+    padding-left: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.categorias{
+    padding-top: 2vh;
+}
+.categoria{
+    display: none;
+}
+#burger{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
