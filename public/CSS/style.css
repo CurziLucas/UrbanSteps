@@ -1,0 +1,15 @@
+@import url(header.css);
+@import url(home.css);
+@import url(footer.css);
+@import url(login.css);
+@import url(register.css);
+@import url(carrusel.css);
+@import url(burger.css);
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Rubik", serif;
+}
+.body{
+    background-color: rgb(230, 230, 230);
+}

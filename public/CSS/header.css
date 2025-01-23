@@ -1,0 +1,75 @@
+#icono-pag{
+    width: 30vh;
+    height: 10vh;
+}
+#junto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-gen{
+    display: flex;
+    flex-direction: column;
+}
+#header-login{
+    display: flex;
+    justify-content: left;
+    width: 10%;
+    padding-left: 0;
+}
+.header-left{
+    display: flex;
+    justify-content: left;
+    width: 40%;
+}
+.header-right{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 1vh;
+}
+#icon-heder{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3px;
+}
+#searchbar{
+    height: 30px;
+}
+#registro{
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: black;
+}
+.inicio-sesion{
+    height: 30px;
+    width: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.espacio{
+    margin-right: 1vh;
+}
+.categorias{
+    padding-top: 2vh;
+}
+.categoria{
+    display: none;
+}
+#burger{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}

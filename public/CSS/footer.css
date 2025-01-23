@@ -1,0 +1,40 @@
+#footer-sec{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#footer-sec a{
+    text-decoration: none;
+    color: black;
+}
+#footer-sec ul{
+    list-style-type: none;
+    padding: 0%;
+}
+#izq{
+    width: 30%;
+}
+#med{
+    width: 33%;
+}
+#der{
+    width: 30%;
+}
+#from{
+    display: flex;
+    flex-direction: row;
+}
+#inscri{
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+#inscri-email{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+#fot-email{
+    width: 13vh;
+}
+#boton{
+    padding: 0;
+}

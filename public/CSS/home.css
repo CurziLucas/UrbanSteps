@@ -1,0 +1,22 @@
+.publi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+    padding-top: 4vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.publi img{
+    height: 50vh;
+    width: 50vh;
+}
+.publi h4{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.publi h5{
+    margin-top: 0;
+    margin-bottom: 1vh;
+}
