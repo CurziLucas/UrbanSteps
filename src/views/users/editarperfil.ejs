@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include('../partials/head.ejs')%>
+
+<body class="body">
+    
+    <%-include('../partials/header.ejs')%>
+
+    <main>
+        <section class="login">
+            <p>Ingrese sus datos para crear su cuenta.</p>
+            <form action="home.html" class="login">
+                <input type="text" name="email" id="email" value="coso@gmail.com">
+                <input type="text" name="user" id="user" value="admin.usuario">
+                <input type="password" name="password" id="password" placeholder="Nueva contraseña">
+                <input type="password" name="password" id="repassword" placeholder="Repetir nueva contraseña">
+                <input type="password" name="password" id="repassword" placeholder="Contraseña actual">
+                <div>
+                    <button type="reset" id="reset">cancelar</button>
+                    <button type="submit" id="enviar">Cambiar datos</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <%-include('../partials/script.ejs')%>
+</body>
+</html>

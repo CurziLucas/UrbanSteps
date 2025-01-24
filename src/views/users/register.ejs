@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanSteps</title>
-    <script src="https://kit.fontawesome.com/bfb0c6ed73.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
+
+<%-include('../partials/head.ejs')%>
+
 <body class="body">
-    <header>
-        <section class="header-gen">
-            <div class="header-left">
-                <img src="../assets/img/LogoUSblancos.jpeg" alt="Logo de UrbanSteps" id="icono-pag">
-            </div>
-        </section>
-    </header>
+    
+    <%-include('../partials/header.ejs')%>
+
     <main>
         <section class="login">
             <p>Ingrese sus datos para crear su cuenta.</p>
             <form action="home.html" class="login">
-                <input type="text" name="email" id="email" placeholder="Email" value="coso@gmail.com">
+                <input type="text" name="email" id="email" placeholder="Email">
                 <input type="text" name="user" id="user" placeholder="Usuario">
                 <input type="password" name="password" id="password" placeholder="Contraseña">
                 <input type="password" name="repassword" id="repassword" placeholder="Repetir contraseña">
                 <div>
                     <button type="reset" id="reset">Reiniciar</button>
-                    <button type="submit" id="enviar">Iniciar sesion</button>
+                    <button type="submit" id="enviar">Crear cuenta</button>
                 </div>
             </form>
         </section>
     </main>
+    <%-include('../partials/script.ejs')%>
 </body>
 </html>

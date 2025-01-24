@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesion</title>
-    <script src="https://kit.fontawesome.com/bfb0c6ed73.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
+
+<%-include('../partials/head.ejs')%>
+
 <body class="body">
-    <header>
-        <section class="header-gen">
-            <div class="header-left">
-                <img src="../assets/img/LogoUSblancos.jpeg" alt="Logo de UrbanSteps" id="icono-pag">
-            </div>
-        </section>
-    </header>
+    
+    <%-include('../partials/header.ejs')%>
+
     <main>
         <section class="login">
             <p>Ingrese sus datos para iniciar sesion.</p>
@@ -23,11 +15,13 @@
                 <input type="password" name="password" id="password" placeholder="Contraseña">
                 <div id="remember">
                     <input type="checkbox" name="rememberme" id="rememberme">
-                    <p>Recordar mis datos</p>
+                    <p style="margin-bottom: 0; margin-left: 2px;">Recordar mis datos</p>
                 </div>
                 <button type="submit" id="enviar">Iniciar sesion</button>
             </form>
+            <p>Si no tienes cuenta, crea una <a href="/user/register">aqui!</a></p>
         </section>
     </main>
+    <%-include('../partials/script.ejs')%>
 </body>
 </html>

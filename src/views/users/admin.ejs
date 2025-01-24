@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include('../partials/head.ejs')%>
+
+<body class="body">
+
+    <%-include('../partials/header.ejs')%>
+
+    <h2>Productos</h2>
+    <form action="#">
+        <input type="button" class="boton-artic" value="Agregar nuevo producto">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Precio</th>
+                <th>Genero</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Adidas</td>
+                <td>Superstar</td>
+                <td>$67usd</td>
+                <td>Unisex</td>
+                <td>
+                    <input type="button" value="Editar">
+                    <input type="button" value="Eliminar">
+                </td>
+            </tr>
+            <tr>
+                <td>Jordan</td>
+                <td>Air Jordan 1 Low </td>
+                <td>$80usd</td>
+                <td>Hombre</td>
+                <td>
+                    <input type="button" value="Editar">
+                    <input type="button" value="Eliminar">
+                </td>
+            </tr>
+            <tr>
+                <td>Jordan</td>
+                <td>Air Jordan 1 Low </td>
+                <td>$80usd</td>
+                <td>Mujer</td>
+                <td>
+                    <input type="button" value="Editar">
+                    <input type="button" value="Eliminar">
+                </td>
+            </tr>
+            <tr>
+                <td>Nike</td>
+                <td>Nike Dunk High</td>
+                <td>$78</td>
+                <td>Hombre</td>
+                <td>
+                    <input type="button" value="Editar">
+                    <input type="button" value="Eliminar">
+                </td>
+            </tr>
+            <tr>
+                <td>Nike</td>
+                <td>Nike Dunk High</td>
+                <td>$78</td>
+                <td>Mujer</td>
+                <td>
+                    <input type="button" value="Editar">
+                    <input type="button" value="Eliminar">
+                </td>
+            </tr>
+            <tr>
+                <td>Vans</td>
+                <td>Old Skool</td>
+                <td>$30.00</td>
+                <td>Unisex</td>
+                <td>
+                    <input type="button" value="Editar">
+                    <input type="button" value="Eliminar">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <%-include('../partials/script.ejs')%>
+</body>
+</html>
