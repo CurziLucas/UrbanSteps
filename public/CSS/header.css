@@ -25,7 +25,7 @@
 }
 .header-right{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     margin: 0;
     padding-left: 2vh;
     padding-right: 2vh;
@@ -66,10 +66,4 @@ color: black;
 }
 .categoria{
     display: none;
-}
-#burger{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2vh;
 }

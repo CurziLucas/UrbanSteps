@@ -1,5 +1,5 @@
 .slider {
-    width: 75vw;
+    width: 90vw;
     height: auto;
     margin: auto;
     overflow: hidden;
@@ -11,10 +11,14 @@
     width: calc(200px * 8);
 }
 .slider .slide {
-    width: 200px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
 }
 .slider .slide img {
-    width: 100%;
+    width: 50%;
+    vertical-align: middle;
 }
 
 @keyframes scroll {
@@ -23,7 +27,7 @@
         transform: translateX(0);
     }
     100% {
-        -webkit-transform: translateX(calc(-200px * 4));
-        transform: translateX(calc(-200px * 4));
+        -webkit-transform: translateX(calc(-100px * 4));
+        transform: translateX(calc(-100px * 4));
     }
 }
