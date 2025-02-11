@@ -38,3 +38,12 @@
 #boton{
     padding: 0;
 }
+
+@media (min-width : 768px) {
+    #fot-email{
+        width: 28vh;
+    }
+}
+@media (min-width: 1024px) {
+    
+}

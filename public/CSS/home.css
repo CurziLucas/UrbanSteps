@@ -20,3 +20,54 @@
     margin-top: 0;
     margin-bottom: 1vh;
 }
+#dispo{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .publi{
+        flex-direction: column;
+        width: 45%;
+    }
+    .publi img{
+        height: 25vh;
+        width: 25vh;
+    }
+    .orden{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 2vh;
+    }
+    .orden h2{
+        width: 100%;
+    }
+    #dispo{
+        display: flex;
+        margin-bottom: 2vh;
+    }
+    .tamaño{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .tamaño img{
+        width: 95%;
+    }
+    
+}
+@media (min-width: 1024px) {
+    .publi{
+        flex-direction: column;
+        width: 22%;
+    }
+    .orden-izq{
+        justify-content: start;
+    }
+    .orden-izq article{
+        margin-left: 3vh;
+        margin-right: 3vh;
+    }
+}
