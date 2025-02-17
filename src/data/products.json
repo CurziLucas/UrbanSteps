@@ -15,7 +15,8 @@
         "colors": [
             "Blanco"
         ],
-        "genre": "x"
+        "genre": "x",
+        "img": "assets/zapatillas/Adidas/Zapatilla Superstar.JPG"
     },
     {
         "id": "2",
@@ -33,7 +34,8 @@
         "colors": [
             "Rojo"
         ],
-        "genre": "M"
+        "genre": "M",
+        "img": "assets/zapatillas/Adidas/"
     },
     {
         "id": "3",

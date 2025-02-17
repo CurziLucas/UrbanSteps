@@ -9,9 +9,11 @@ app.use(express.static(path.join(__dirname, '../public')))
 
 const routeHome = require('./routes/routeHome.js')
 const routeUser = require('./routes/routeUser.js')
+const routeProducts = require('./routes/routeProducts.js')
 
 app.use('/', routeHome)
 app.use('/user', routeUser)
+app.use('/products', routeProducts)
 
 app.use((req, res) => {
     res.status(404).render('error.ejs')

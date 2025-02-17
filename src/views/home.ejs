@@ -59,39 +59,15 @@
         </section>
         <section class="orden">
             <h2>ARTICULOS</h1>
-            <article class="publi">
-                <img src="../assets/zapatillas/Adidas/Zapatilla Superstar.jpg" alt="">
-                <h4>Adidas Superstar</h4>
-                <h5>Genero: Unisex</h5>
-            </article>
-            <article class="publi">
-                <img src="../assets/zapatillas/Jordan/Air Jordan 1 Low hombre.webp" alt="">
-                <h4>Air Jordan 1 Low </h4>
-                <h5>Genero: Hombre</h5>
-            </article>
-            <article class="publi">
-                <img src="../assets/zapatillas/Nike/ZAPATILLAS NIKE DUNK HIGH DE MUJER.webp" alt="">
-                <h4>NIKE DUNK HIGH</h4>
-                <h5>Genero: Mujer</h5>
-            </article>
-            <article class="publi">
-                <img src="../assets/zapatillas/Vans/ZapatillasU OLD SKOOL.jpg" alt="">
-                <h4>OLD SKOOL</h4>
-                <h5>Genero: Unisex</h5>
-            </article>
-        </section>
-        <section class="orden orden-izq">
-            <h2>OFERTAS FIN DE MES</h2>
-            <article class="publi">
-                <img src="../assets/zapatillas/Jordan/Air Jordan 1 Low.webp" alt="">
-                <h4>Air Jordan 1 Low</h4>
-                <h5>Genero: Mujer</h5>
-            </article>
-            <article class="publi">
-                <img src="../assets/zapatillas/Nike/ZAPATILLAS NIKE DUNK LOW RETRO SE HOMBRE.webp" alt="">
-                <h4>NIKE DUNK LOW RETRO</h4>
-                <h5>Genero: Hombre</h5>
-            </article>
+                <% for( let i = 0; i < productos.length; i++ ) { %>
+                    <%# if(productos[i].genre == "M"|| productos[i].genre == "F") { %>
+                        <article class="publi">
+                            <img src="/<%- productoi]s[.img %>" alt="">
+                            <h4><%- productos[i].name %></h4>
+                            <h5>Genero: <%- productos[i].genre %></h5>
+                        </article>
+                    <%# } %>
+                <% } %>
         </section>
     </main>
     <%-include('./partials/footer.ejs')%>

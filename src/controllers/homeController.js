@@ -1,11 +1,13 @@
-
-
-
+let {leerProductos} = require("../data/products.js")
+const path = require("path")
+const ruta = path.resolve(__dirname, "../data/products.json")
+let productos = leerProductos(ruta)
 
 const homeController = {
     index: (req, res) => {
         res.render('home.ejs', {
-            titulo: 'UrbanSteps'
+            titulo: 'UrbanSteps',
+            productos:productos
         })
     },
     about: (req, res) => {
