@@ -257,5 +257,90 @@
             "Blanco"
         ],
         "genre": "M"
+    },
+    {
+        "id": "16",
+        "name": "Zapatillas U OLD SKOOL",
+        "description": "Las Old Skool son las zapatillas clásicas de Vans y el primer modelo en lucir el icónico sidestripe de la marca.",
+        "brand": "Vans",
+        "model": "U OLD SKOOL",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Negro y Blanco"
+        ],
+        "genre": "X"
+    },
+    {
+        "id": "17",
+        "name": "Zapatillas U Knu Skool",
+        "description": "La Knu Skool es un modelo reeditado de los años 90, cuando las zapatillas de skate eran extra hinchadas. ",
+        "brand": "Vans",
+        "model": "U Knu Skool",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Negro"
+        ],
+        "genre": "X"
+    },
+    {
+        "id": "18",
+        "name": "Zapatillas U Cruze CC",
+        "description": "Las Old Skool son las zapatillas clásicas de Vans y el primer modelo en lucir el icónico sidestripe de la marca.",
+        "brand": "Vans",
+        "model": "U Cruze CC",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Negro"
+        ],
+        "genre": "X"
+    },
+    {
+        "id": "19",
+        "name": "Zapatillas U OLD SKOOL",
+        "description": "Las Old Skool son las zapatillas clásicas de Vans y el primer modelo en lucir el icónico sidestripe de la marca.",
+        "brand": "Vans",
+        "model": "U OLD SKOOL",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Azul y Negro"
+        ],
+        "genre": "X"
+    },
+    {
+        "id": "20",
+        "name": "Zapatillas U OLD SKOOL",
+        "description": "Las Old Skool son las zapatillas clásicas de Vans y el primer modelo en lucir el icónico sidestripe de la marca.",
+        "brand": "Vans",
+        "model": "U OLD SKOOL",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Verde"
+        ],
+        "genre": "X"
     }
 ]
