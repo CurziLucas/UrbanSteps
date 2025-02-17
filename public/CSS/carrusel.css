@@ -31,3 +31,15 @@
         transform: translateX(calc(-100px * 4));
     }
 }
+@media (min-width: 768px) {
+    @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translateX(calc(-100px * 4));
+            transform: translateX(calc(-100px * 4));
+        }
+    }
+}

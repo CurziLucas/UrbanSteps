@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "Zapatillas Adidas Superstar",
+        "description": "Las Adidas Superstar son un clásico icónico del calzado deportivo, conocidas por su diseño distintivo que incluye la puntera de goma en forma de concha y las tres rayas laterales.",
+        "price": 99.99,
+        "brand": "Adidas",
+        "model": "Superstar",
+        "sizes": [
+            37,
+            38,
+            40,
+            42
+        ],
+        "colors": [
+            "blanco"
+        ],
+        "genre": "x"
+    },
+    {
+        "id": "2",
+        "name": "Zapatillas Air Jordan 1 Low",
+        "description": "Las Air Jordan 1 Low son una versión de caña baja de las icónicas zapatillas de baloncesto Air Jordan 1",
+        "price": 99.99,
+        "brand": "Jordan",
+        "model": "Air Jordan 1 Low",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Rojo"
+        ],
+        "genre": "M"
+    }
+]

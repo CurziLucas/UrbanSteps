@@ -67,3 +67,8 @@ color: black;
 .categoria{
     display: none;
 }
+@media (min-width: 768px) {
+    #header-login{
+        font-size: 25px;
+    }
+}
