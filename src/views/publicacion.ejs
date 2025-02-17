@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include('partials/head.ejs')%>
+
+    <body class="body">
+
+        <%-include('partials/header.ejs')%>
+            <section>
+                <img src="../assets/zapatillas/Jordan/Air Jordan 1 Low Hombre.webp" alt="Jordan">
+            </section>
+            <section>
+                <div>
+                    <h4>Lo Nuevo</h4>
+                    <h1>Air Jordan 1 Low</h1>
+                    <h5>Modelo Jordan</h5>
+                    <h5>Genero Hombre</h5>
+                    <h2> $80 usd</h2>
+                    <h5>Hasta 6 cuotas $16.000 sin interés</h5>
+                </div>
+                <div>
+                    <form action="admin.ejs">
+                        <select name="sizes-selec" id="sizes">
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="40">40</option>
+                        </select>
+                        <button type="enviar">Agregar al carrito</button>
+                    </form>
+                </div>
+            </section>
+            <%-include('partials/script.ejs')%>
+    </body>
+
+</html>

@@ -17,6 +17,9 @@ const userController = {
     },
     admin: (req, res) => {
         res.render('users/admin.ejs')
+    },
+    crearpubli: (req, res) => {
+        res.render('users/crearpubli.ejs')
     }
 }
 module.exports = userController

@@ -8,4 +8,6 @@ router.get('/register', userController.register)
 router.get('/perfil', userController.perfil)
 router.get('/editarperfil', userController.editarperfil)
 router.get('/admin', userController.admin)
+router.get('/crearpubli', userController.crearpubli)
+
 module.exports = router
