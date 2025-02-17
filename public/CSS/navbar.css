@@ -1,0 +1,14 @@
+.custom-navbar {
+    background-color: rgb(5, 32, 5) !important;
+  }
+  .icon-container a {
+    color: white;
+    margin-left: 10px; /* Ajusta este valor según necesites más o menos espacio */
+  }
+  .search-form {
+    display: flex;
+    margin-right: 10px;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }

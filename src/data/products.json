@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Zapatillas Adidas Superstar",
-        "description": "Las Adidas Superstar son un clásico icónico del calzado deportivo, conocidas por su diseño distintivo que incluye la puntera de goma en forma de concha y las tres rayas laterales.",
+        "description": "Un clásico icónico del calzado deportivo, conocidas por su diseño distintivo que incluye la puntera de goma en forma de concha y las tres rayas laterales.",
         "price": 99.99,
         "brand": "Adidas",
         "model": "Superstar",
@@ -13,14 +13,14 @@
             42
         ],
         "colors": [
-            "blanco"
+            "Blanco"
         ],
         "genre": "x"
     },
     {
         "id": "2",
         "name": "Zapatillas Air Jordan 1 Low",
-        "description": "Las Air Jordan 1 Low son una versión de caña baja de las icónicas zapatillas de baloncesto Air Jordan 1",
+        "description": "Son una versión de caña baja de las icónicas zapatillas de baloncesto Air Jordan 1",
         "price": 99.99,
         "brand": "Jordan",
         "model": "Air Jordan 1 Low",
@@ -32,6 +32,229 @@
         ],
         "colors": [
             "Rojo"
+        ],
+        "genre": "M"
+    },
+    {
+        "id": "3",
+        "name": "Zapatillas Nike Zoom Vomero Roam",
+        "description": "Esta versión acondicionada para el invierno de los Vomero se diseñó pensando en las condiciones de la ciudad y está preparada para afrontar los días más húmedos.",
+        "price": 99.99,
+        "brand": "Nike",
+        "model": "Zoom Vomero Roam",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Azul"
+        ],
+        "genre": "M"
+    },
+    {
+        "id": "4",
+        "name": "Zapatillas Nike V2K Run",
+        "description": "Esta versión acondicionada para el invierno de los Vomero se diseñó pensando en las condiciones de la ciudad y está preparada para afrontar los días más húmedos.",
+        "price": 99.99,
+        "brand": "Nike",
+        "model": "V2K Run",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Marron"
+        ],
+        "genre": "M"
+    },
+    {
+        "id": "5",
+        "name": "Zapatillas Nike V2K Run",
+        "description": "Cúbrete con una mezcla de metálicos llamativos, detalles plásticos referenciales y una entresuela con una estética perfectamente vintage.",
+        "brand": "Nike",
+        "model": "V2K Run",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Blanco"
+        ],
+        "genre": "F"
+    },
+    {
+        "id": "6",
+        "name": "Zapatillas Adidas Forum 84 Low CL",
+        "description": "Estas zapatillas adidas de corte bajo inyectan estilo premium y actitud ambiciosa a cada paso.",
+        "brand": "Adidas",
+        "model": "Forum 84 Low CL",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Azul"
+        ],
+        "genre": "M"
+    },
+    {
+        "id": "7",
+        "name": "Zapatillas Adidas Grand Court AlphaCL",
+        "description": "Estas zapatillas adidas estilizadas y fáciles de combinar exigen un lugar especial en tu colección.",
+        "brand": "Adidas",
+        "model": "Grand Court AlphaCL",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Azul"
+        ],
+        "genre": "F"
+    },
+    {
+        "id": "8",
+        "name": "Zapatillas Nike Dunk High",
+        "description": "Su diseño clásico inspirado en el básquetbol, trae la década de los 80 de vuelta a las calles, mientras su cuello acolchado y de corte high aporta un look clásico y muy cómodo.",
+        "brand": "Nike",
+        "model": "Dunk High",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Negro"
+        ],
+        "genre": "F"
+    },
+    {
+        "id": "9",
+        "name": "Zapatillas Nike Dunk Low Retro",
+        "description": "Los colores representan las universidades más importantes y el cuero impecable tiene la cantidad perfecta de brillo que los hacen ganadores.",
+        "brand": "Nike",
+        "model": "Dunk Low Retro",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Negro"
+        ],
+        "genre": "M"
+    },
+    {
+        "id": "10",
+        "name": "Zapatillas Adidas Running Runfalcon 5",
+        "description": "Tanto en la pista como en la cinta de correr, alcanzá todas tus metas con estas zapatillas de running adidas.",
+        "brand": "Adidas",
+        "model": "Running Runfalcon 5",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Negro"
+        ],
+        "genre": "M"
+    },
+    {
+        "id": "11",
+        "name": "Zapatillas Adidas Campus 00s brand-stripe low-top suede trainers",
+        "description": "Aunque hicieron su debut en la cancha en los años 80, fueron rápidamente adoptados en casi todas partes, desde campus universitarios hasta parques de patinaje y estudios de grabación.",
+        "brand": "Adidas",
+        "model": "Campus 00s brand-stripe low-top suede trainers",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Verde"
+        ],
+        "genre": "F"
+    },
+    {
+        "id": "12",
+        "name": "Zapatillas Air Jordan 1 Low",
+        "description": "Esta versión de las zapatillas más populares de todos los tiempos está fabricada en piel auténtica e incorpora detalles sutiles que aportan un toque innovador.",
+        "brand": "Jordan",
+        "model": "Air Jordan 1 Low",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Bordo"
+        ],
+        "genre": "F"
+    },
+    {
+        "id": "13",
+        "name": "Zapatillas Jordan Luka 3 Photo Finish",
+        "description": "Las salpicaduras de colores intensos hacen que estas Luka 3 ultraimpecables brillen aún más.",
+        "brand": "Jordan",
+        "model": "Luka 3 Photo Finish",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Blanco"
+        ],
+        "genre": "F"
+    },
+    {
+        "id": "14",
+        "name": "Zapatillas Jordan Jordan Max Aura 6",
+        "description": "Ha recombinado en un nuevo diseño que prioriza la comodidad y la amortiguación. Como toque final, el escudo AJ14 Jumpman legitima tu look.",
+        "brand": "Jordan",
+        "model": "Jordan Max Aura 6",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Negro"
+        ],
+        "genre": "M"
+    },
+    {
+        "id": "15",
+        "name": "Zapatillas Jordan Air Jordan XXXIX",
+        "description": "Diseñado para las necesidades actuales del deporte, este modelo viene equipado con tecnología lista para la cancha con la que puedes crear tu propia leyenda.",
+        "brand": "Jordan",
+        "model": "Air Jordan XXXIX",
+        "sizes": [
+            35,
+            36,
+            37,
+            40
+        ],
+        "colors": [
+            "Blanco"
         ],
         "genre": "M"
     }
