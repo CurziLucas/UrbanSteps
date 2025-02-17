@@ -8,4 +8,6 @@ router.get('/acerca-de', homeController.about)
 router.get('/preguntas-f', homeController.preguntas)
 router.get('/guia-talles',homeController.talles)
 router.get('/tyc', homeController.termino)
+router.get('/publicacion', homeController.publicacion)
+
 module.exports = router

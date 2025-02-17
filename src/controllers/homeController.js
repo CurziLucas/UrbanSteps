@@ -19,6 +19,9 @@ const homeController = {
     },
     termino: (rep, res) =>{
         res.render('tyc.ejs')
+    },
+    publicacion: (req, res) => {
+        res.render('publicacion.ejs')
     }
 }
 module.exports = homeController
