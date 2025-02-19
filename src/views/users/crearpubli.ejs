@@ -8,13 +8,13 @@
             <main>
                 <section class="login">
                     <p>Completar datos del articulo</p>
-                    <form action="admin.ejs" class="login">
-                        <input type="text" name="Marca" placeholder="Marca">
-                        <input type="text" name="Modelo" placeholder="Modelo">
-                        <input type="text" name="Genero" placeholder="Genero">
-                        <input type="text" name="Precio" placeholder="Precio">
-                        <label for="file">Cargar imagen del articulo</label>
-                        <input type="file" name="file" accept="image/jpg, image/png,">
+                    <form action="/products/agregarproducto" class="login" method="post">
+                        <input type="text" id="name"  name="name" placeholder="Nombre">
+                        <input type="text" id="brand" name="brand" placeholder="Marca">
+                        <input type="text" id="model" name="model" placeholder="Modelo">
+                        <input type="text" id="genre" name="genre" placeholder="Genero">
+                        <input type="number" id="price" name="price" placeholder="Precio">
+                        <input type="text" id="description" name="description" placeholder="descripcion">
                         <div>
                             <button type="reset" id="Cancelar">Cancelar</button>
                             <button type="submit" id="Crear publicación">Crear publicación</button>

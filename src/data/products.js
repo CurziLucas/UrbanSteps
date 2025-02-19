@@ -13,7 +13,16 @@ function buscarProducto(idProducto, productos){
     })
 }
 
+async function agregarProducto(archivo, nuevoProducto) {
+    let productos = leerProductos(archivo);
+    let nuevoId = productos.length > 0 ? productos[productos.length - 1].id +1 : 1;
+    let nuevoProductoId = {id:nuevoId, ...nuevoProducto}
+    productos.push(nuevoProductoId)
+    fs.writeFileSync(archivo, JSON.stringify(productos, null, 2))
+}
+
 module.exports = {
     leerProductos, 
-    buscarProducto
+    buscarProducto,
+    agregarProducto
 }

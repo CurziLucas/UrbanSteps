@@ -41,9 +41,14 @@
 
 @media (min-width : 768px) {
     #fot-email{
-        width: 28vh;
+        width: 20vh;
     }
 }
 @media (min-width: 1024px) {
-    
+    #fot-email{
+        width: 28vh;
+    }
+    #izq{
+        margin-left: 2vh;
+    }
 }

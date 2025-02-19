@@ -6,6 +6,8 @@ app.listen(3030, () => console.log('app abierta en 3030!'))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, '../public')))
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
 const routeHome = require('./routes/routeHome.js')
 const routeUser = require('./routes/routeUser.js')

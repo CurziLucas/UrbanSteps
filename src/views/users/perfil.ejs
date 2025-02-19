@@ -3,21 +3,23 @@
 
 <%-include('../partials/head.ejs')%>
 
-<body class="body">
-    <%-include('../partials/header.ejs')%>
-    
-    <div class="foto">
-        <i class="tamaño fa-solid fa-circle-user"></i>
-    </div>
-    <div>
-        <h1>Admin.usuario</h1>
-        <p>Email: admin</p>
-        <p>Direccion: calle1234</p>
-        <p style="margin-bottom: 3vh;">codigo postal: 1234</p>
-        <form action="/user/editarperfil">
-            <button class="boton-perfil">Editar perfil</button>
-        </form>
-    </div>
-    <%-include('../partials/script.ejs')%>
-</body>
+    <body class="body">
+        <%-include('../partials/header.ejs')%>
+                <div class="foto">
+                    <i class="tamaño fa-solid fa-circle-user"></i>
+                </div>
+                <div class="info-todo">
+                    <div class="info-perfil">
+                        <h1>Admin.usuario</h1>
+                        <p>Email: admin</p>
+                        <p>Direccion: calle1234</p>
+                        <p style="margin-bottom: 3vh;">codigo postal: 1234</p>
+                        <form action="/user/editarperfil">
+                            <button class="boton-perfil">Editar perfil</button>
+                        </form>
+                    </div>
+                </div>
+            <%-include('../partials/script.ejs')%>
+    </body>
+
 </html>

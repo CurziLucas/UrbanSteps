@@ -44,6 +44,36 @@
                 <div class="slide">
                     <img src="../assets/img/jordan.png" alt="jordan">
                 </div>
+                <div class="slide">
+                    <img src="../assets/img/vans.png" alt="vans">
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/adidas.png" alt="adidas">
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/nike.png" alt="nike">
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/jordan.png" alt="jordan">
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/vans.png" alt="vans">
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/adidas.png" alt="adidas">
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/nike.png" alt="nike">
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/jordan.png" alt="jordan">
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/vans.png" alt="vans">
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/adidas.png" alt="adidas">
+                </div>
             </div>
         </div>
         <section id="dispo">
@@ -60,13 +90,13 @@
         <section class="orden">
             <h2>ARTICULOS</h1>
                 <% for( let i = 0; i < productos.length; i++ ) { %>
-                    <%# if(productos[i].genre == "M"|| productos[i].genre == "F") { %>
+                    <%/* if(productos[i].genre == "M"|| productos[i].genre == "F") { */%>
                         <article class="publi">
-                            <img src="/<%- productoi]s[.img %>" alt="">
-                            <h4><%- productos[i].name %></h4>
+                            <img src="/<%- productos[i].img %>" alt="">
+                            <h4><%- productos[i].model %></h4>
                             <h5>Genero: <%- productos[i].genre %></h5>
                         </article>
-                    <%# } %>
+                    <% /* } */%>
                 <% } %>
         </section>
     </main>

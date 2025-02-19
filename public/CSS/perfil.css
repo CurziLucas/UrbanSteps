@@ -8,3 +8,16 @@
     color: white;
     background-color: green;
 }
+@media (min-width: 768px) {
+    .info-todo{
+        display: flex;
+        justify-content: center;
+    }
+    .info-perfil{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 30%;
+    }
+}

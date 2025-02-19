@@ -1,6 +1,26 @@
 [
     {
         "id": "1",
-        "username": "martina"
+        "username": "martina",
+        "email": "marinaperez@gmail.com",
+        "direction": "calle1234",
+        "zip-code": "1234",
+        "password": "m1234"
+    },
+    {
+        "id": "2",
+        "username": "nicolas",
+        "email": "nicolasmartinez@gmail.com",
+        "direction": "calle2341",
+        "zip-code": "2341",
+        "password": "n2341"
+    },
+    {
+        "id": "3",
+        "username": "lautaro",
+        "email": "lautaropereira@gmail.com",
+        "direction": "calle3412",
+        "zip-code": "3412",
+        "password": "l3412"
     }
 ]
