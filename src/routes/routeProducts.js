@@ -11,3 +11,6 @@ router.get('/:id', productsController.detail)
 // router.get('/publicacion', productsController.publicacion)
 
 module.exports = router
+
+
+

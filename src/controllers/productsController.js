@@ -16,6 +16,7 @@ const productsController = {
             producto:buscarProducto(req.params.id, productos)
         })
     }
+    
     // preguntas: (req, res) => {
     //     res.render('preguntas-f.ejs')
     // },

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include('../partials/head.ejs')%>
+
+<body class="body">
+    <%-include('../partials/header.ejs')%>
+    <main>
+        <section class="login">
+            <p>Editar datos del articulo</p>
+            <form action="admin.ejs" class="login">
+                <input type="text" name="Marca" placeholder="Marca">
+                <input type="text" name="Modelo" placeholder="Modelo">
+                <input type="text" name="Genero" placeholder="Genero">
+                <input type="text" name="Precio" placeholder="Precio">
+                <label for="file">Cargar imagen del articulo</label>
+                <input type="file" name="file" accept="image/jpg, image/png,">
+                <div>
+                    <button type="reset" id="Cancelar">Cancelar</button>
+                    <button type="submit" id="Editar publicación">Editar publicación</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <%-include('../partials/script.ejs')%>
+</body>
+</html>
