@@ -8,22 +8,24 @@
     <%-include('../partials/header.ejs')%>
 
     <main>
-        <section class="login">
-            <p>Ingrese sus datos para crear su cuenta.</p>
-            <form action="home.html" class="login">
-                <input type="text" name="email" id="email" value="coso@gmail.com">
-                <input type="text" name="user" id="user" value="admin.usuario">
-                <input type="text" name="direction" id="direction" value="calle1234">
-                <input type="text" name="zip-code" id="zip-code" value="1234">
-                <input type="password" name="password" id="password" placeholder="Nueva contraseña">
-                <input type="password" name="password" id="repassword" placeholder="Repetir nueva contraseña">
-                <input type="password" name="password" id="repassword" placeholder="Contraseña actual">
-                <div>
-                    <button type="reset" id="reset">cancelar</button>
-                    <button type="submit" id="enviar">Cambiar datos</button>
-                </div>
-            </form>
-        </section>
+        <% if (locals.user != undefined) { %>
+            <section class="login">
+                <p>Ingrese sus datos para crear su cuenta.</p>
+                <form action="/user/editarperfil" method="post" class="login">
+                    <input type="text" name="email" id="email" value="<%- locals.user.email %>">
+                    <input type="text" name="username" id="user" value="<%- locals.user.username %>">
+                    <input type="text" name="direction" id="direction" value="<%- locals.user.direction %>">
+                    <input type="text" name="zipcode" id="zip-code" value="<%- locals.user.zipcode %>">
+                    <input type="password" name="newpassword" id="newpassword" placeholder="Nueva contraseña">
+                    <input type="password" name="renewpassword" id="renewpassword" placeholder="Repetir nueva contraseña">
+                    <input type="password" name="password" id="password" placeholder="Contraseña actual">
+                    <div>
+                        <button type="reset" id="reset">cancelar</button>
+                        <button type="submit" id="enviar">Cambiar datos</button>
+                    </div>
+                </form>
+            </section>
+        <% } %>
     </main>
     <%-include('../partials/script.ejs')%>
 </body>

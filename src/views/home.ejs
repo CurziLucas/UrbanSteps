@@ -90,13 +90,13 @@
         <section class="orden">
             <h2>ARTICULOS</h1>
                 <% for( let i = 0; i < productos.length; i++ ) { %>
-                    <%/* if(productos[i].genre == "M"|| productos[i].genre == "F") { */%>
-                        <article class="publi">
-                            <img src="/<%- productos[i].img %>" alt="">
-                            <h4><%- productos[i].model %></h4>
-                            <h5>Genero: <%- productos[i].genre %></h5>
-                        </article>
-                    <% /* } */%>
+                       <a href="/products/detalle/<%- productos[i].id %>"  class="publi"> 
+                            <article>
+                                <img src="/<%- productos[i].img %>" alt="">
+                                <h4><%- productos[i].model %></h4>
+                                <h5>Genero: <%- productos[i].genre %></h5>
+                            </article>
+                        </a>
                 <% } %>
         </section>
     </main>

@@ -9,5 +9,7 @@ router.get('/preguntas-f', homeController.preguntas)
 router.get('/guia-talles',homeController.talles)
 router.get('/tyc', homeController.termino)
 router.get('/publicacion', homeController.publicacion)
+router.get('/genreM', homeController.genreM)
+router.get('/genreF', homeController.genreF)
 
 module.exports = router

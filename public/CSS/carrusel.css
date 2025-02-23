@@ -50,8 +50,8 @@
             transform: translateX(0);
         }
         100% {
-            -webkit-transform: translateX(calc(-75px * 4));
-            transform: translateX(calc(-75px * 4));
+            -webkit-transform: translateX(calc(-100px * 4));
+            transform: translateX(calc(-100px * 4));
         }
     }
 }

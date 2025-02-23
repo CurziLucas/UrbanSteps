@@ -1,0 +1,401 @@
+[
+  {
+    "id": 1,
+    "name": "Zapatillas Adidas Superstar",
+    "description": "Un clásico icónico del calzado deportivo, conocidas por su diseño distintivo que incluye la puntera de goma en forma de concha y las tres rayas laterales.",
+    "price": 99.99,
+    "brand": "Adidas",
+    "model": "Superstar",
+    "sizes": [
+      37,
+      38,
+      40,
+      42
+    ],
+    "colors": [
+      "Blanco"
+    ],
+    "genre": "Unisex",
+    "img": "assets/zapatillas/Adidas/Zapatilla Superstar.JPG"
+  },
+  {
+    "id": 2,
+    "name": "Zapatillas Air Jordan 1 Low",
+    "description": "Son una versión de caña baja de las icónicas zapatillas de baloncesto Air Jordan 1",
+    "price": 99.99,
+    "brand": "Jordan",
+    "model": "Air Jordan 1 Low",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Rojo"
+    ],
+    "genre": "Masculino",
+    "img": "assets/zapatillas/Jordan/Air Jordan 1 Low hombre.webp"
+  },
+  {
+    "id": 3,
+    "name": "Zapatillas Nike Zoom Vomero Roam",
+    "description": "Esta versión acondicionada para el invierno de los Vomero se diseñó pensando en las condiciones de la ciudad y está preparada para afrontar los días más húmedos.",
+    "price": 99.99,
+    "brand": "Nike",
+    "model": "Zoom Vomero Roam",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Azul"
+    ],
+    "genre": "Masculino",
+    "img": "assets/zapatillas/Nike/Nike Zoom Vemero Road Hombre.webp"
+  },
+  {
+    "id": 4,
+    "name": "Zapatillas Nike V2K Run",
+    "description": "Esta versión acondicionada para el invierno de los Vomero se diseñó pensando en las condiciones de la ciudad y está preparada para afrontar los días más húmedos.",
+    "price": 99.99,
+    "brand": "Nike",
+    "model": "V2K Run",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Marron"
+    ],
+    "genre": "Masculino",
+    "img": "assets/zapatillas/Nike/Nike V2K Run Hombre.webp"
+  },
+  {
+    "id": 5,
+    "name": "Zapatillas Nike V2K Run",
+    "description": "Cúbrete con una mezcla de metálicos llamativos, detalles plásticos referenciales y una entresuela con una estética perfectamente vintage.",
+    "price": 99.99,
+    "brand": "Nike",
+    "model": "V2K Run",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Blanco"
+    ],
+    "genre": "Femenino",
+    "img": "assets/zapatillas/Nike/Nike V2K Run Mujer.webp"
+  },
+  {
+    "id": 6,
+    "name": "Zapatillas Adidas Forum 84 Low CL",
+    "description": "Estas zapatillas adidas de corte bajo inyectan estilo premium y actitud ambiciosa a cada paso.",
+    "price": 99.99,
+    "brand": "Adidas",
+    "model": "Forum 84 Low CL",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Azul"
+    ],
+    "genre": "Masculino",
+    "img": "assets/zapatillas/Adidas/Zapatillas Forum 84 Low CL Hombre.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Zapatillas Adidas Grand Court AlphaCL",
+    "description": "Estas zapatillas adidas estilizadas y fáciles de combinar eUnisexigen un lugar especial en tu colección.",
+    "price": 99.99,
+    "brand": "Adidas",
+    "model": "Grand Court AlphaCL",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Azul"
+    ],
+    "genre": "Femenino",
+    "img": "assets/zapatillas/Adidas/Zapatillas Grand Court Alpha Mujer.jfif"
+  },
+  {
+    "id": 8,
+    "name": "Zapatillas Nike Dunk High",
+    "description": "Su diseño clásico inspirado en el básquetbol, trae la década de los 80 de vuelta a las calles, mientras su cuello acolchado y de corte high aporta un look clásico y muy cómodo.",
+    "price": 99.99,
+    "brand": "Nike",
+    "model": "Dunk High",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Negro"
+    ],
+    "genre": "Femenino",
+    "img": "assets/zapatillas/Nike/ZAPATILLAS NIKE DUNK HIGH DE MUJER.webp"
+  },
+  {
+    "id": 9,
+    "name": "Zapatillas Nike Dunk Low Retro",
+    "description": "Los colores representan las universidades más importantes y el cuero impecable tiene la cantidad perfecta de brillo que los hacen ganadores.",
+    "price": 99.99,
+    "brand": "Nike",
+    "model": "Dunk Low Retro",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Negro"
+    ],
+    "genre": "Masculino",
+    "img": "assets/zapatillas/Nike/ZAPATILLAS NIKE DUNK LOW RETRO SE HOMBRE.webp"
+  },
+  {
+    "id": 10,
+    "name": "Zapatillas Adidas Running Runfalcon 5",
+    "description": "Tanto en la pista como en la cinta de correr, alcanzá todas tus metas con estas zapatillas de running adidas.",
+    "price": 99.99,
+    "brand": "Adidas",
+    "model": "Running Runfalcon 5",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Negro"
+    ],
+    "genre": "Masculino",
+    "img": "assets/zapatillas/Adidas/Zapatillas Adidas Running Runfalcon 5 Hombre.jfif"
+  },
+  {
+    "id": 11,
+    "name": "Zapatillas Adidas Campus 00s brand-stripe low-top suede trainers",
+    "description": "Aunque hicieron su debut en la cancha en los años 80, fueron rápidamente adoptados en casi todas partes, desde campus universitarios hasta parques de patinaje y estudios de grabación.",
+    "price": 99.99,
+    "brand": "Adidas",
+    "model": "Campus 00s brand-stripe low-top suede trainers",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Verde"
+    ],
+    "genre": "Femenino",
+    "img": "assets/zapatillas/Adidas/Zapatillas Adidas Campus 00s brand-stripe low-top suede trainers Mujer.webp"
+  },
+  {
+    "id": 12,
+    "name": "Zapatillas Air Jordan 1 Low",
+    "description": "Esta versión de las zapatillas más populares de todos los tiempos está fabricada en piel auténtica e incorpora detalles sutiles que aportan un toque innovador.",
+    "price": 99.99,
+    "brand": "Jordan",
+    "model": "Air Jordan 1 Low",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Bordo"
+    ],
+    "genre": "Femenino",
+    "img": "assets/zapatillas/Jordan/Air Jordan 1 Low.webp"
+  },
+  {
+    "id": 13,
+    "name": "Zapatillas Jordan Luka 3 Photo Finish",
+    "description": "Las salpicaduras de colores intensos hacen que estas Luka 3 ultraimpecables brillen aún más.",
+    "price": 99.99,
+    "brand": "Jordan",
+    "model": "Luka 3 Photo Finish",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Blanco"
+    ],
+    "genre": "Femenino",
+    "img": "assets/zapatillas/Jordan/Jordan Luka 3 Photo Finish Mujer.webp"
+  },
+  {
+    "id": 14,
+    "name": "Zapatillas Jordan MaUnisex Aura 6",
+    "description": "Ha recombinado en un nuevo diseño que prioriza la comodidad y la amortiguación. Como toque final, el escudo AJ14 Jumpman legitima tu look.",
+    "price": 99.99,
+    "brand": "Jordan",
+    "model": "Jordan MaUnisex Aura 6",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Negro"
+    ],
+    "genre": "Masculino",
+    "img": "assets/zapatillas/Jordan/Jordan Max Aura 6 Hombre.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Zapatillas Jordan Air XXXIX",
+    "description": "Diseñado para las necesidades actuales del deporte, este modelo viene equipado con tecnología lista para la cancha con la que puedes crear tu propia leyenda.",
+    "price": 99.99,
+    "brand": "Jordan",
+    "model": "Air Jordan XXXIX",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Blanco"
+    ],
+    "genre": "Masculino",
+    "img": "assets/zapatillas/Jordan/Zapatillas Jordan Air Jordan XXXIX Hombre.webp"
+  },
+  {
+    "id": 16,
+    "name": "Zapatillas U OLD SKOOL",
+    "description": "Las Old Skool son las zapatillas clásicas de Vans y el primer modelo en lucir el icónico sidestripe de la marca.",
+    "price": 99.99,
+    "brand": "Vans",
+    "model": "U OLD SKOOL",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Negro y Blanco"
+    ],
+    "genre": "Unisex",
+    "img": "assets/zapatillas/Vans/ZapatillasU OLD SKOOL.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Zapatillas U Knu Skool",
+    "description": "La Knu Skool es un modelo reeditado de los años 90, cuando las zapatillas de skate eran eUnisextra hinchadas. ",
+    "price": 99.99,
+    "brand": "Vans",
+    "model": "U Knu Skool",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Negro"
+    ],
+    "genre": "Unisex",
+    "img": "assets/zapatillas/Vans/U Knu Skool.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Zapatillas U Cruze CC",
+    "description": "Las Old Skool son las zapatillas clásicas de Vans y el primer modelo en lucir el icónico sidestripe de la marca.",
+    "price": 99.99,
+    "brand": "Vans",
+    "model": "U Cruze CC",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Negro"
+    ],
+    "genre": "Unisex",
+    "img": "assets/zapatillas/Vans/ZapatillasU Cruze CC.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Zapatillas U OLD SKOOL",
+    "description": "Las Old Skool son las zapatillas clásicas de Vans y el primer modelo en lucir el icónico sidestripe de la marca.",
+    "price": 99.99,
+    "brand": "Vans",
+    "model": "U OLD SKOOL",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Azul y Negro"
+    ],
+    "genre": "Unisex",
+    "img": "assets/zapatillas/Vans/Azul y negro.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Zapatillas U OLD SKOOL",
+    "description": "Las Old Skool son las zapatillas clásicas de Vans y el primer modelo en lucir el icónico sidestripe de la marca.",
+    "price": 99.99,
+    "brand": "Vans",
+    "model": "U OLD SKOOL",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Verde"
+    ],
+    "genre": "Unisex",
+    "img": "assets/zapatillas/Vans/Verde.jpg"
+  },
+  {
+    "id": 21,
+    "name": "21",
+    "description": "hola",
+    "price": "89.99",
+    "brand": "Vans",
+    "model": "U OLD SKOOL",
+    "sizes": [
+      35,
+      36,
+      37,
+      40
+    ],
+    "colors": [
+      "Verde"
+    ],
+    "genre": "Unisex",
+    "img": "assets/zapatillas/Vans/Verde.jpg"
+  }
+]

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include('../partials/head.ejs')%>
+
+<body class="body">
+    <%-include('../partials/header.ejs')%>
+    <main>
+        <section class="login">
+            <p>Editar datos del articulo</p>
+            <form action="/products/editarpubli/<%- producto.id %>" class="login" method="post">
+                <input type="text" name="nombre" placeholder="Nombre" value="<%- producto.id %>">
+                <input type="text" name="marca" placeholder="Marca" value="<%- producto.brand %>">
+                <input type="text" name="modelo" value="<%- producto.model %>" placeholder="Modelo">
+                <input type="text" name="genero" value="<%- producto.genre %>" placeholder="Genero">
+                <input type="number" name="precio" value="<%- producto.price %>" placeholder="Precio">
+                <input type="text" name="descripcion" value="<%- producto.description %>" placeholder="Descripcion">
+                <!-- <label for="file">Cargar imagen del articulo</label>
+                <input type="file" name="file" accept="image/jpg, image/png,"> -->
+                <div>
+                    <button type="reset" id="Cancelar">Cancelar</button>
+                    <button type="submit" id="Editar publicación">Editar publicación</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <%-include('../partials/script.ejs')%>
+</body>
+</html>

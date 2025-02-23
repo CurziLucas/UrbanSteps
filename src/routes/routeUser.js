@@ -4,10 +4,13 @@ const router = express.Router()
 const userController = require('../controllers/userController.js')
 
 router.get('/login', userController.login)
+router.post('/login', userController.logging)
+router.get('/logout', userController.logout)
 router.get('/register', userController.register)
-router.get('/perfil', userController.perfil)
-router.get('/editarperfil', userController.editarperfil)
+router.post('/register', userController.addingUser)
+router.get('/perfil', userController.profile)
+router.get('/editarperfil', userController.editprofile)
+router.post('/editarperfil', userController.editingprofile)
 router.get('/admin', userController.admin)
-router.get('/crearpubli', userController.crearpubli)
 
 module.exports = router

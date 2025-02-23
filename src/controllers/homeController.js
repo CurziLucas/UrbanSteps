@@ -24,6 +24,18 @@ const homeController = {
     },
     publicacion: (req, res) => {
         res.render('publicacion.ejs')
+    },
+    genreM: (req, res) => {
+        res.render('genreM.ejs', {
+            titulo: 'UrbanSteps',
+            productos:productos
+        })
+    },
+    genreF: (req, res) => {
+        res.render('genreF.ejs', {
+            titulo: 'UrbanSteps',
+            productos:productos
+        })
     }
 }
 module.exports = homeController

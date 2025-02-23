@@ -5,20 +5,22 @@
 
     <body class="body">
         <%-include('../partials/header.ejs')%>
-                <div class="foto">
-                    <i class="tamaño fa-solid fa-circle-user"></i>
+        <% if (locals.user != undefined) { %>
+            <div class="foto">
+                <img src="/<%- locals.user.avatar %>">
+            </div>
+            <div class="info-todo">
+                <div class="info-perfil">
+                    <h1><%- locals.user.username %></h1>
+                    <p>Email: <%- locals.user.email %></p>
+                    <p>Direccion: <%- locals.user.direction %></p>
+                    <p style="margin-bottom: 3vh;">codigo postal: <%- locals.user.zipcode %></p>
+                    <a href="/user/editarperfil">
+                        <button class="boton-perfil">Editar perfil</button>
+                    </a>
                 </div>
-                <div class="info-todo">
-                    <div class="info-perfil">
-                        <h1>Admin.usuario</h1>
-                        <p>Email: admin</p>
-                        <p>Direccion: calle1234</p>
-                        <p style="margin-bottom: 3vh;">codigo postal: 1234</p>
-                        <form action="/user/editarperfil">
-                            <button class="boton-perfil">Editar perfil</button>
-                        </form>
-                    </div>
-                </div>
+            </div>
+        <% } %>
             <%-include('../partials/script.ejs')%>
     </body>
 

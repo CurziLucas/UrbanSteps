@@ -3,19 +3,19 @@
     <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand order-2 ms-2" href="#">
-      <img src="adsasdasd.png" alt="" width="240" height="auto">
-    </a>
+    <div class="navbar-brand order-2 ms-2" href="#">
+      <img src="assets/img/LogoUSblancos.png" alt="Ícono de página" width="150" height="46">
+    </div>
     <div class="collapse navbar-collapse order-3" id="navbarNav">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Hombre</a>
+          <a class="nav-link" href="/genreM">Hombre</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Mujer</a>
+          <a class="nav-link" href="/genreF">Mujer</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
@@ -26,12 +26,16 @@
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
     </form>
     <div class="icon-container d-flex align-items-center order-5">
-      <a href="/user/login" class="text-light me-3"><i class="fas fa-sign-in-alt"></i></a> <!-- Icono de inicio de sesión -->
-      <a href="/user/perfil" class="text-light"><i class="fas fa-user"></i></a> <!-- Icono de perfil -->
+      <% if (locals.user == undefined) { %>
+        <a href="/user/login" class="text-light me-3"><i class="fas fa-sign-in-alt"></i></a>
+      <% } else { %>
+        <a href="/user/perfil" class="text-light me-3"><i class="fas fa-user"></i></a>
+        <a href="/user/logout" class="text-light me-3"><i class="fas fa-sign-out-alt"></i></a>
+      <% } %>
+      <a href="#" class="text-light"><i class="fas fa-shopping-cart"></i></a>
     </div>
   </div>
 </nav>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>

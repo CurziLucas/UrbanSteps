@@ -26,19 +26,22 @@
             <% for( let i = 0; i < productos.length; i++ ) { %>
                 <tr>
                     <td><%- productos[i].id %></td>
+                    <td><%- productos[i].name %></td>
                     <td><%- productos[i].brand %></td>
                     <td><%- productos[i].model %></td>
                     <td><%- productos[i].price %></td>
                     <td><%- productos[i].genre %></td>
                     <td>
-                        <input type="button" value="Editar">
-                        <input type="button" value="Eliminar">
+                        <a href="/products/editarpubli/<%- productos[i].id %>"><input type="button" value="Editar"></a>
+                        <form action="/products/eliminarproducto/<%- productos[i].id %>" method="post">
+                            <button type="submit" value="Eliminar">Eliminar</button>
+                        </form>
                     </td>
                 </tr>
             <% } %>
         </tbody>
     </table>
-
+    
     <%-include('../partials/script.ejs')%>
 </body>
 </html>

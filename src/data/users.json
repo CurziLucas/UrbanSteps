@@ -1,26 +1,29 @@
 [
-    {
-        "id": "1",
-        "username": "martina",
-        "email": "marinaperez@gmail.com",
-        "direction": "calle1234",
-        "zip-code": "1234",
-        "password": "m1234"
-    },
-    {
-        "id": "2",
-        "username": "nicolas",
-        "email": "nicolasmartinez@gmail.com",
-        "direction": "calle2341",
-        "zip-code": "2341",
-        "password": "n2341"
-    },
-    {
-        "id": "3",
-        "username": "lautaro",
-        "email": "lautaropereira@gmail.com",
-        "direction": "calle3412",
-        "zip-code": "3412",
-        "password": "l3412"
-    }
+  {
+    "id": 1,
+    "username": "martina",
+    "email": "marinaperez@gmail.com",
+    "direction": "calle1234",
+    "zipcode": "1234",
+    "password": "m1234",
+    "avatar": "assets/avatars/v3_0039338.jpg"
+  },
+  {
+    "id": 2,
+    "username": "nicolas",
+    "email": "nicolasmartinez@gmail.com",
+    "direction": "calle2341",
+    "zipcode": "2341",
+    "password": "n2341",
+    "avatar": "assets/avatars/v3_0593518.jpg"
+  },
+  {
+    "id": 3,
+    "username": "lautaro",
+    "email": "lautaropereira@gmail.com",
+    "direction": "calle3412",
+    "zipcode": "3412",
+    "password": "l3412",
+    "avatar": "assets/avatars/v3_0290158.jpg"
+  }
 ]

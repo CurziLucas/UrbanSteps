@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include('../partials/head.ejs')%>
+
+    <body class="body">
+        <%-include('../partials/header.ejs')%>
+            <main>
+                table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Precio</th>
+                        <th>Genero</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for( let i = 0; i < productos.length; i++ ) { %>
+                        <tr>
+                            <td><%- productos[i].id %></td>
+                            <td><%- productos[i].name %></td>
+                            <td><%- productos[i].brand %></td>
+                            <td><%- productos[i].model %></td>
+                            <td><%- productos[i].price %></td>
+                            <td><%- productos[i].genre %></td>
+                            <td>
+                                <a href="/products/editarpubli/<%- productos[i].id %>"><input type="button" value="Editar"></a>
+                                <form action="/products/eliminarproducto/<%- productos[i].id %>" method="post">
+                                    <button type="submit" value="Eliminar">Eliminar</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+            </main>
+            <%-include('../partials/script.ejs')%>
+        </body>
+</html>

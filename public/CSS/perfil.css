@@ -4,6 +4,9 @@
 .foto{
     text-align: center;
 }
+.foto img{
+    border-radius: 50%;
+}
 .boton-perfil{
     color: white;
     background-color: green;
