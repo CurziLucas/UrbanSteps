@@ -2,7 +2,7 @@ const { underscoredIf } = require("sequelize/lib/utils")
 
 module.export = function(sequelize, dataTypes) {
     
-    let alias = 'productdesc'
+    let alias = 'product_cont'
 
     let cols = {
         id_produc: {
@@ -43,7 +43,7 @@ module.export = function(sequelize, dataTypes) {
     }
     
     let config = {
-        tableName: 'Productdesc',
+        tableName: 'Products_cont',
         timestamps: false,
         underscored: true,
     }
