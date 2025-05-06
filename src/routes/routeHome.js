@@ -1,15 +1,15 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
+const homeController = require('../controllers/homeController');
 
-const homeController = require('../controllers/homeController.js')
 
-router.get('/', homeController.index)
-router.get('/acerca-de', homeController.about)
-router.get('/preguntas-f', homeController.preguntas)
-router.get('/guia-talles',homeController.talles)
-router.get('/tyc', homeController.termino)
-router.get('/publicacion', homeController.publicacion)
-router.get('/genreM', homeController.genreM)
-router.get('/genreF', homeController.genreF)
+router.get('/', homeController.index);
+router.get('/acerca-de', homeController.about);
+router.get('/preguntas-f', homeController.preguntas);
+router.get('/guia-talles', homeController.talles);
+router.get('/tyc', homeController.termino);
+router.get('/publicacion', homeController.publicacion);
+router.get('/genreM', homeController.genreM);
+router.get('/genreF', homeController.genreF);
 
-module.exports = router
+module.exports = router;
