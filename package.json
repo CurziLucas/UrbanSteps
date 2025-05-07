@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
@@ -12,7 +14,9 @@
   "description": "Integrantes",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/app.js",
+    "db:reset": "sequelize db:drop && sequelize db:create && sequelize db:migrate && sequelize db:seed:all"
   },
   "repository": {
     "type": "git",
@@ -23,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/CurziLucas/UrbanSteps/issues"
   },
-  "homepage": "https://github.com/CurziLucas/UrbanSteps#readme"
+  "homepage": "https://github.com/CurziLucas/UrbanSteps#readme",
+  "devDependencies": {
+    "sequelize-cli": "^6.6.3"
+  }
 }
