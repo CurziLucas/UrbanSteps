@@ -3,7 +3,6 @@ const session = require('express-session')
 const app = express()
 const path = require('path')
 const localsUserCheck = require('./middlewares/localsUserCheck.js')
-const { connectDB } = require('./config/db')
 
 app.listen(3030, () => console.log('app abierta en 3030!'))
 app.set('views', path.join(__dirname, 'views'))

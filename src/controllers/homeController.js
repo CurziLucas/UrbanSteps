@@ -3,8 +3,7 @@
 //const ruta = path.resolve(__dirname, "../data/products.json")
 //let productos = leerProductos(ruta)
 
-const mongoose = require('mongoose');
-const db = mongoose.connection;
+const db = require('../database/models');
 
 const obtenerProductos = () => {
     return new Promise((resolve, reject) => {
@@ -35,10 +34,12 @@ const obtenerProductosPorGenero = (genero) => {
 const homeController = {
     index: async (req, res) => {
         try {
-            const productos = await obtenerProductos();
+            const products = await db.Product.findAll({
+                include: [{ association: 'brand' }, { association: 'genre' }]
+            });
             res.render('home.ejs', {
                 titulo: 'UrbanSteps',
-                productos: productos
+                productos: products
             });
         } catch (error) {
             console.log(error);

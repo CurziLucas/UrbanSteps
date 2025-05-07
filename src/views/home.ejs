@@ -90,11 +90,11 @@
         <section class="orden">
             <h2>ARTICULOS</h2>
             <% for( let i = 0; i < productos.length; i++ ) { %>
-                <a href="/products/detalle/<%- productos[i].id_product_count %>" class="publi">
+                <a href="/products/detalle/<%- productos[i].id %>" class="publi">
                     <article>
-                        <img src="/<%- productos[i].img %>" alt="<%- productos[i].model %>">
+                        <img src="/assets/zapatillas/<%- productos[i].image%>" alt="<%- productos[i].name %>">
                         <h4><%- productos[i].model %></h4>
-                        <h5>Genero: <%- productos[i].genre %></h5>
+                        <h5>Genero: <%- productos[i].genre.name %></h5>
                     </article>
                 </a>
             <% } %>
