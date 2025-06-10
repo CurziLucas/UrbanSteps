@@ -9,15 +9,27 @@
                 <section class="login">
                     <p>Completar datos del articulo</p>
                     <form action="/products/agregarproducto" class="login" method="post">
-                        <input type="text" id="name"  name="name" placeholder="Nombre">
-                        <input type="text" id="brand" name="brand" placeholder="Marca">
-                        <input type="text" id="model" name="model" placeholder="Modelo">
-                        <input type="text" id="genre" name="genre" placeholder="Genero">
-                        <input type="number" id="price" name="price" placeholder="Precio">
-                        <input type="text" id="description" name="description" placeholder="descripcion">
+                        <div class="mb-3">
+                            <input class="form-control form-control-lg rounded-pill mb-0" type="text" id="name"  name="name" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control form-control-lg rounded-pill mb-0" type="text" id="brand" name="brand" placeholder="Marca">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control form-control-lg rounded-pill mb-0" type="text" id="model" name="model" placeholder="Modelo">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control form-control-lg rounded-pill mb-0" type="text" id="genre" name="genre" placeholder="Genero">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control form-control-lg rounded-pill mb-0" type="number" id="price" name="price" placeholder="Precio">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control form-control-lg rounded-pill mb-0" type="text" id="description" name="description" placeholder="descripcion">
+                        </div>
                         <div>
-                            <button type="reset" id="Cancelar">Cancelar</button>
-                            <button type="submit" id="Crear publicación">Crear publicación</button>
+                            <button type="reset" id="button-perfil" class="btn btn-dark rounded-pill btn-md mt-0 custom-btn">Cancelar</button>
+                            <button type="submit" id="button-perfil" class="btn btn-dark rounded-pill btn-md mt-0 custom-btn">Crear publicación</button>
                         </div>
                     </form>
                 </section>

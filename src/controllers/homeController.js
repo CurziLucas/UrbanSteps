@@ -5,30 +5,25 @@
 
 const db = require('../database/models');
 
-const obtenerProductos = () => {
-    return new Promise((resolve, reject) => {
-        const sql = 'SELECT * FROM products';
-        db.query(sql, (error, results) => {
-            if (error) {
-                reject(error);
-            } else {
-                resolve(results);
-            }
-        });
-    });
+const obtenerProductos = async () => {
+    try {
+        // Utiliza el modelo Product de Sequelize
+        const productos = await db.Product.findAll();
+        return productos;
+    } catch (error) {
+        throw error;
+    }
 };
 
-const obtenerProductosPorGenero = (genero) => {
-    return new Promise((resolve, reject) => {
-        const sql = 'SELECT * FROM products WHERE genre = ?';
-        db.query(sql, [genero], (error, results) => {
-            if (error) {
-                reject(error);
-            } else {
-                resolve(results);
-            }
+const obtenerProductosPorGenero = async (genero) => {
+    try {
+        const productos = await db.Product.findAll({
+            where: { genreId: genero }
         });
-    });
+        return productos;
+    } catch (error) {
+        throw error;
+    }
 };
 
 const homeController = {
@@ -63,26 +58,22 @@ const homeController = {
     },
     genreM: async (req, res) => {
         try {
-            const productos = await obtenerProductosPorGenero('M');
-            res.render('genreM.ejs', {
-                titulo: 'UrbanSteps',
-                productos: productos
-            });
+            const productos = await obtenerProductosPorGenero([1, 3]);
+            console.log(productos);
+            res.render('genreM.ejs', { productos });
         } catch (error) {
-            console.log(error);
-            res.status(500).send({ message: 'Error al obtener productos masculinos' });
+            console.error('Error al obtener productos por género:', error);
+            res.status(500).send('Error en el servidor');
         }
     },
     genreF: async (req, res) => {
         try {
-            const productos = await obtenerProductosPorGenero('F');
-            res.render('genreF.ejs', {
-                titulo: 'UrbanSteps',
-                productos: productos
-            });
+            const productos = await obtenerProductosPorGenero([2, 3]);
+            console.log(productos);
+            res.render('genreF.ejs', { productos });
         } catch (error) {
-            console.log(error);
-            res.status(500).send({ message: 'Error al obtener productos femeninos' });
+            console.error('Error al obtener productos por género:', error);
+            res.status(500).send('Error en el servidor');
         }
     }
 };

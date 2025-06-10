@@ -4,26 +4,28 @@
 <%-include('./partials/head.ejs')%>
 
 
-    <body class="body">
+<body class="body">
 
-        <%-include('./partials/header.ejs')%>
+    <%-include('./partials/header.ejs')%>
 
-            <main class="min">
-                <section class="orden">
-                    <h2>ARTICULOS MASCULINOS</h1>
-                        <% for( let i=0; i < productos.length; i++ ) { %>
-                            <% if(productos[i].genre=="Femenino" || productos[i].genre=="Unisex" ) { %>
-                                <article class="publi">
-                                    <img src="/<%- productos[i].img %>" alt="">
-                                    <h4><%- productos[i].model %></h4>
-                                    <h5>Genero: <%- productos[i].genre %></h5>
+        <main class="min">
+            <section class="orden">
+                <h2>ARTICULOS FEMENINOS</h1>
+                    <% for( let i=0; i < productos.length; i++ ) { %>
+                        <% if(productos[i].genreId === 2 || productos[i].genreId === 3 ) { %>
+                            <a href="/products/detalle/<%- productos[i].id %>" class="publi">
+                                <article>
+                                    <img src="/assets/zapatillas/<%- productos[i].image%>" alt="<%- productos[i].name %>">
+                                    <h4><%- productos[i].name %></h4>
+                                    <h5>Genero: <%- productos[i].genreId %></h5>
                                 </article>
-                            <% } %>
+                            </a>
                         <% } %>
-                </section>
-            </main>
-            <%-include('./partials/footer.ejs')%>
-            <%-include('./partials/script.ejs')%>
-    </body>
+                    <% } %>
+            </section>
+        </main>
+        <%-include('./partials/footer.ejs')%>
+        <%-include('./partials/script.ejs')%>
+</body>
 
 </html>

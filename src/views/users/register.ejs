@@ -9,17 +9,36 @@
 
     <main>
         <section class="login">
-            <p>Ingrese sus datos para crear su cuenta.</p>
+            <p class="p-text">Ingrese sus datos para crear su cuenta.</p>
             <form action="/user/register" method="post" class="login">
-                <input type="text" name="email" id="email" placeholder="Email">
-                <input type="text" name="user" id="user" placeholder="Usuario">
-                <input type="text" name="direction" id="direction" placeholder="direccion">
-                <input type="text" name="zipcode" id="zipcode" placeholder="Codigo postal">
-                <input type="password" name="password" id="password" placeholder="Contraseña">
-                <input type="password" name="repassword" id="repassword" placeholder="Repetir contraseña">
+                <% if (typeof errors != 'undefined') { %>
+                    <ul>
+                        <% errors.forEach(error => { %>
+                            <li><%= error.msg %></li>
+                        <% }) %>
+                    </ul>
+                <% } %>
+                <div class="mb-3">
+                    <input class="form-control form-control-lg rounded-pill mb-0" type="text" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control form-control-lg rounded-pill mb-0" type="text" name="username" id="user" placeholder="Usuario">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control form-control-lg rounded-pill mb-0" type="text" name="direction" id="direction" placeholder="direccion">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control form-control-lg rounded-pill mb-0" type="text" name="zipcode" id="zipcode" placeholder="Codigo postal">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control form-control-lg rounded-pill mb-0" type="password" name="password" id="password" placeholder="Contraseña">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control form-control-lg rounded-pill mb-0" type="password" name="repassword" id="repassword" placeholder="Repetir contraseña">
+                </div>
                 <div>
-                    <button type="reset" id="reset">Reiniciar</button>
-                    <button type="submit" id="enviar">Crear cuenta</button>
+                    <button type="reset" id="button-perfil" class="btn btn-dark rounded-pill btn-md mt-0 custom-btn">Reiniciar</button>
+                    <button type="submit" id="button-perfil" class="btn btn-dark rounded-pill btn-md mt-0 custom-btn">Crear cuenta</button>
                 </div>
             </form>
         </section>

@@ -93,8 +93,8 @@
                 <a href="/products/detalle/<%- productos[i].id %>" class="publi">
                     <article>
                         <img src="/assets/zapatillas/<%- productos[i].image%>" alt="<%- productos[i].name %>">
-                        <h4><%- productos[i].model %></h4>
-                        <h5>Genero: <%- productos[i].genre.name %></h5>
+                        <h4><%- productos[i].name %></h4>
+                        <h5>Genero: <%- productos[i].genre ? productos[i].genre.name : 'Sin género' %></h5>
                     </article>
                 </a>
             <% } %>

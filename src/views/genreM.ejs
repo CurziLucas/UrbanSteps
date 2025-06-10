@@ -12,12 +12,14 @@
                 <section class="orden">
                     <h2>ARTICULOS MASCULINOS</h1>
                         <% for( let i=0; i < productos.length; i++ ) { %>
-                            <% if(productos[i].genre=="Masculino" || productos[i].genre=="Unisex" ) { %>
-                                <article class="publi">
-                                    <img src="/<%- productos[i].img %>" alt="">
-                                    <h4><%- productos[i].model %></h4>
-                                    <h5>Genero: <%- productos[i].genre %></h5>
-                                </article>
+                            <% if(productos[i].genreId === 1 || productos[i].genreId === 3 ) { %>
+                                <a href="/products/detalle/<%- productos[i].id %>" class="publi">
+                                    <article>
+                                        <img src="/assets/zapatillas/<%- productos[i].image%>" alt="<%- productos[i].name %>">
+                                        <h4><%- productos[i].name %></h4>
+                                        <h5>Genero: <%- productos[i].genreId %></h5>
+                                    </article>
+                                </a>
                             <% } %>
                         <% } %>
                 </section>

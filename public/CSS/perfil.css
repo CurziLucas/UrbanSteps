@@ -11,6 +11,15 @@
     color: white;
     background-color: green;
 }
+.custom-btn {
+    background-color: rgb(5, 32, 5);
+    border-color: rgb(5, 32, 5);
+    color: white;
+}
+#button-perfil{
+    color: white;
+    background-color: green;
+}
 @media (min-width: 768px) {
     .info-todo{
         display: flex;

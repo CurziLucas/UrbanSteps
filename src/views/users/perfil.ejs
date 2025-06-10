@@ -7,7 +7,11 @@
         <%-include('../partials/header.ejs')%>
         <% if (locals.user != undefined) { %>
             <div class="foto">
-                <img src="/<%- locals.user.avatar %>">
+                <% if (locals.user.avatar) { %>
+                    <img src="/<%- locals.user.avatar %>" alt="Avatar">
+                <% } else { %>
+                    <i class="fa-solid fa-circle-user avatar"></i>
+                <% } %>
             </div>
             <div class="info-todo">
                 <div class="info-perfil">
@@ -16,7 +20,7 @@
                     <p>Direccion: <%- locals.user.direction %></p>
                     <p style="margin-bottom: 3vh;">codigo postal: <%- locals.user.zipcode %></p>
                     <a href="/user/editarperfil">
-                        <button class="boton-perfil">Editar perfil</button>
+                        <button id="button-perfil" class="btn btn-dark rounded-pill btn-md mt-0 custom-btn">Editar perfil</button>
                     </a>
                 </div>
             </div>

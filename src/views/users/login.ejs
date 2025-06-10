@@ -9,15 +9,26 @@
 
     <main>
         <section class="login">
-            <p>Ingrese sus datos para iniciar sesion.</p>
+            <p class="p-text">Ingrese sus datos para iniciar sesion.</p>
             <form action="/user/login" method="post" class="login">
-                <input type="text" name="email" id="email" placeholder="Email">
-                <input type="password" name="password" id="password" placeholder="Contraseña">
-                <div id="remember">
-                    <input type="checkbox" name="rememberme" id="rememberme">
-                    <p style="margin-bottom: 0; margin-left: 2px;">Recordar mis datos</p>
+                <% if (typeof errors != 'undefined') { %>
+                    <ul>
+                        <% errors.forEach(error => { %>
+                            <li><%= error.msg %></li>
+                        <% }) %>
+                    </ul>
+                <% } %>
+                <div class="mb-3">
+                    <input type="email" id="email" name="email" class="form-control form-control-lg rounded-pill" placeholder="Correo electrónico" required>
                 </div>
-                <button type="submit" id="enviar">Iniciar sesion</button>
+                <div class="mb-3">
+                    <input type="password" id="password" name="password" class="form-control form-control-lg rounded-pill mb-0" placeholder="Contraseña" required>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" id="remember" name="remember" class="form-check-input">
+                    <label for="remember" class="form-check-label">Recordar mis datos</label>
+                </div>
+                <button class="btn btn-dark rounded-pill btn-md mt-0" type="submit" id="enviar">Iniciar sesion</button>
             </form>
             <p>Si no tienes cuenta, crea una <a href="/user/register">aqui!</a></p>
         </section>
@@ -25,3 +36,5 @@
     <%-include('../partials/script.ejs')%>
 </body>
 </html>
+
+    

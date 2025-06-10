@@ -4,6 +4,15 @@
     justify-content: center;
     align-items: center;
 }
+.p-text{
+    margin-top: 2vh;
+    font-size: 20px;
+}
+.avatar{
+    font-size: 200px;
+    margin: 1vh;
+    color: rgb(5, 32, 5)
+}
 #remember{
     display: flex;
     flex-direction: row;

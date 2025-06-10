@@ -1,115 +1,104 @@
-const {error} = require("console")
-
-//let {leerProductos, buscarProducto, agregarProducto, eliminarProducto, editarProducto} = require("../data/products.js")
-//const path = require("path")
-//const ruta = path.resolve(__dirname, "../data/products.json")
-//let productos = leerProductos(ruta)
-
+const db = require('../database/models');
+const Product = db.Product;
 
 const productsController = {
     index: async (req, res) => {
+    try {
+        console.log('Intentando conectar a la base de datos...');
+        const productos = await Product.findAll({
+            attributes: ['id', 'name', 'description', 'price', 'img'],
+            include: [{
+                model: models.Brand,
+                as: 'brand'
+            }, {
+                model: models.Genre,
+                as: 'genre'
+            }]
+        });
+        res.render('home.ejs', {
+            titulo: 'UrbanSteps',
+            productos: productos
+        });
+    } catch (error) {
+        console.error('Error completo:', error);
+        console.error('Mensaje de error:', error.message);
+        console.error('Stack trace:', error.stack);
+        res.status(500).json({
+            error: "Error al obtener productos",
+            detalles: error.message,
+            stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
+        });
+    }
+},
+
+    detail: async (req, res) => {
+        const id = req.params.id;
+        if (isNaN(id)) {
+            return res.status(400).send('ID inválido');
+        }
         try {
-            console.log('Intentando conectar a la base de datos...');
-            const productos = await Product.findAll({
-                attributes: ['id', 'name', 'description', 'price', 'brand', 'model', 'genre', 'img']
+            const producto = await Product.findByPk(id,{
+                include: [{
+                    model: db.Size,
+                    as: 'sizes'
+                }]
             });
-            console.log('Productos obtenidos:', productos);
-            res.render('home.ejs', {
-                titulo: 'UrbanSteps',
-                productos: productos
+            console.log(producto.sizes)
+            if (!producto) {
+                return res.status(404).send('Producto no encontrado');
+            }
+            res.render('publicacion.ejs', {
+                producto: producto
             });
         } catch (error) {
-            console.error('Error completo:', error);
-            console.error('Mensaje de error:', error.message);
-            console.error('Stack trace:', error.stack);
-            res.status(500).json({
-                error: "Error al obtener productos",
-                detalles: error.message,
-                stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
-            });
-        }
-        Product.findAll()
-            .then(productos => {
-                res.render('home.ejs', {
-                    titulo: 'UrbanSteps',
-                    productos: productos
-                });
-            })
-            .catch(error => {
-                console.error("Error al obtener productos:", error);
-                res.status(500).send("Error al cargar productos");
-            });
-    },
-    detail: (req, res) => {
-        const id = req.params.id;
-    
-    connection.query('SELECT * FROM productos WHERE id = ?', [id], (err, results) => {
-        if (err) {
-            console.error('Error al obtener los datos:', err);
+            console.error('Error al obtener los datos:', error);
             return res.status(500).send('Error en el servidor');
         }
-        
-        res.render('publicacion.ejs', {
-            producto: results[0]
-        });
-    });
     },
+
     addProduct: (req, res) => {
         res.render('users/crearpubli.ejs', {})
     },
-    addingProduct: (req, res) => {
-        const nuevoProducto = {
-            name: req.body.name,
-            description: req.body.description,
-            price: req.body.price,
-            brand: req.body.brand,
-            model: req.body.model,
-            genre: req.body.genre
+
+    addingProduct: async (req, res) => {
+        try {
+            const nuevoProducto = {
+                name: req.body.name,
+                description: req.body.description,
+                price: req.body.price,
+                brandId: req.body.brandId,
+                model: req.body.model,
+                genreId: req.body.genreId
+            };
+            const producto = await Product.create(nuevoProducto);
+            res.redirect('/products/detalle/' + producto.id);
+        } catch (error) {
+            console.error('Error al guardar el producto:', error);
+            res.status(500).send({ message: 'Error al guardar el producto' });
         }
-    
-        const sql = 'INSERT INTO products SET ?';
-        
-        db.query(sql, nuevoProducto, (error, results) => {
-            if (error) {
-                console.log(error);
-                res.status(500).send({ message: 'Error al guardar el producto' });
-            } else {
-                res.redirect('/products');
-            }
-        });
     },
-    editProduct: (req, res) => {
-        const sql = 'SELECT * FROM products WHERE id = ?';
-        
-        db.query(sql, [req.params.id], (error, results) => {
-            if (error) {
-                console.log(error);
-                res.status(500).send({ message: 'Error al obtener el producto' });
-            } else if (results.length === 0) {
-                res.status(404).send({ message: 'Producto no encontrado' });
-            } else {
-                res.render('products/editarpubli.ejs', {
-                    producto: results[0]
-                });
+
+    editProduct: async (req, res) => {
+        try {
+            const producto = await Product.findByPk(req.params.id);
+            if (!producto) {
+                return res.status(404).send({ message: 'Producto no encontrado' });
             }
-        });
+            res.render('products/editarpubli.ejs', {
+                producto: producto
+            });
+        } catch (error) {
+            console.error('Error al obtener el producto:', error);
+            res.status(500).send({ message: 'Error al obtener el producto' });
+        }
     },
-    editingProduct: (req, res) => {
-        const sql = 'SELECT * FROM products WHERE id = ?';
-        
-        db.query(sql, [req.params.id], (error, results) => {
-            if (error) {
-                console.log(error);
-                res.status(500).send({ message: 'Error al obtener el producto' });
-                return;
+
+    editingProduct: async (req, res) => {
+        try {
+            const producto = await Product.findByPk(req.params.id);
+            if (!producto) {
+                return res.status(404).send({ message: 'Producto no encontrado' });
             }
-            
-            if (results.length === 0) {
-                res.status(404).send({ message: 'Producto no encontrado' });
-                return;
-            }
-    
-            const producto = results[0];
             const productoEditado = {
                 id: producto.id,
                 name: req.body.nombre || producto.name,
@@ -117,52 +106,32 @@ const productsController = {
                 price: req.body.precio || producto.price,
                 brand: req.body.marca || producto.brand,
                 model: req.body.modelo || producto.model,
-                sizes: producto.sizes,
-                colors: producto.colors,
-                genre: req.body.genero || producto.genre,
-                img: producto.img
+                genre: req.body.genero || producto.genre
             };
-    
-            const sqlUpdate = 'UPDATE products SET ? WHERE id = ?';
-            
-            db.query(sqlUpdate, [productoEditado, producto.id], (error, results) => {
-                if (error) {
-                    console.log(error);
-                    res.status(500).send({ message: 'Error al actualizar el producto' });
-                } else {
-                    res.redirect('/products/detalle/' + producto.id);
-                }
+            await Product.update(productoEditado, {
+                where: { id: producto.id }
             });
-        });
+            res.redirect('/products/detalle/' + producto.id);
+        } catch (error) {
+            console.error('Error al actualizar el producto:', error);
+            res.status(500).send({ message: 'Error al actualizar el producto' });
+        }
     },
-    deletingProduct: (req, res) => {
-        const sql = 'DELETE FROM products WHERE id = ?';
-        
-        db.query(sql, [req.params.id], (error, results) => {
-            if (error) {
-                console.log(error);
-                res.status(500).send({ message: 'Error al eliminar el producto' });
-            } else if (results.affectedRows === 0) {
-                res.status(404).send({ message: 'Producto no encontrado' });
-            } else {
-                res.redirect('/user/admin');
-            }
-        });
-    },
-    
-};
-    
-    // preguntas: (req, res) => {
-    //     res.render('preguntas-f.ejs')
-    // },
-    // talles: (rep, res) => {
-    //     res.render('guia-talles.ejs')
-    // },
-    // termino: (rep, res) =>{
-    //     res.render('tyc.ejs')
-    // },
-    // publicacion: (req, res) => {
-    //     res.render('publicacion.ejs')
-    // }
 
-module.exports = productsController
+    deletingProduct: async (req, res) => {
+        try {
+            const resultado = await Product.destroy({
+                where: { id: req.params.id }
+            });
+            if (resultado === 0) {
+                return res.status(404).send({ message: 'Producto no encontrado' });
+            }
+            res.redirect('/user/admin');
+        } catch (error) {
+            console.error('Error al eliminar el producto:', error);
+            res.status(500).send({ message: 'Error al eliminar el producto' });
+        }
+    }
+};
+
+module.exports = productsController;
